@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: relative;
+            left: 50%;
+            margin-top: 200px;
+            margin-left: -200px;
+            animation: xz 5s linear infinite;
+        }
+        
+        .b {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 350px auto;
+            box-shadow: 1px 1px 10px #FF0000;
+            position: absolute;
+            left: 150px;
+            top: -200px;
+        }
+        
+        .c {
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgb(253, 3, 3);
+            border-radius: 50%;
+            position: relative;
+            left: 50%;
+            margin-top: 250px;
+            margin-left: -200px;
+            animation: xz 5s linear infinite;
+        }
+        
+        @keyframes xz {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .d {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(3, 27, 241);
+            border-radius: 50%;
+            margin: 350px auto;
+            position: absolute;
+            left: 110px;
+            top: -248px;
+        }
+        
+        .e {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(232, 236, 176);
+            border-radius: 50%;
+            margin: 350px auto;
+            position: absolute;
+            left: -10px;
+            top: -248px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="b"></div>
+        <div class="c">
+            <div class="d"></div>
+            <div class="e"></div>
+        </div>
+    </div>
+</body>
+
+</html>
